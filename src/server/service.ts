@@ -2,7 +2,7 @@
 
 import { fetcher } from "@/lib/server/fetcher";
 import { TQuery, TQueryCategory } from "@/types/api";
-const BASE_PATH = "/api/news";
+const BASE_PATH = "/backoffice/api/news";
 
 export const findService = async (id: string) => {
   const resp = await fetcher(`${BASE_PATH}/${id}`);

@@ -3,7 +3,7 @@
 import { fetcher } from "@/lib/server/fetcher";
 import { TQuery, TQueryCategory } from "@/types/api";
 
-const BASE_PATH = "/api/application";
+const BASE_PATH = "/backoffice/api/application";
 
 export const findApplication = async (id: string) => {
   return await fetcher(`${BASE_PATH}/${id}`);

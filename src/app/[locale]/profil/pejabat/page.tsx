@@ -16,9 +16,7 @@ const PejabatPage = () => {
       const fetchUsers = async () => {
           try {
               const response = await api.get('/profile');
-              console.log()
               setUsers(response.data.data);
-              console.log(response.data.data)
           } catch (error) {
               console.error(error);
           } finally {
@@ -110,44 +108,6 @@ const PejabatPage = () => {
           </div>
         ))
       )}
-
-      {/* {users.map((user, index) => {
-        return (
-          <div className="w-full relative  bg-background">
-            <AppContainer>
-              <div className="grid grid-cols-6 md:grid-cols-12 h-full gap-5 py-5">
-                <div className=" col-span-3 xl:px-5 group">
-                  <div className="h-[300px] rounded md:h-full w-full relative overflow-hidden">
-                    <Image
-                      src={
-                        "/images/profil-pimpinan/Brigjen. Pol. (Purn). Dr. Achmadi, S.H.,M.A.P.jpg"
-                      }
-                      fill
-                      sizes="100vh"
-                      alt=""
-                      className=" object-cover group-hover:scale-125 transition-all duration-300"
-                    />
-                  </div>
-                </div>
-                <div className=" col-span-9 px-3  xl:px-5">
-                  <div className="h-full flex flex-col justify-center space-y-2">
-                    <h1>
-                      {user.name}
-                    </h1>
-                    <div className=" leading-normal"
-                      dangerouslySetInnerHTML={{
-                        __html: DOMPurify.sanitize(
-                          user.description.replace(/\r\n/g, "<br>") // Ganti \r\n dengan <br>
-                        ),
-                      }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </AppContainer>
-          </div>
-        )
-      })} */}
 
       {/* <div className=" h-[400px] w-full bg-background">
         <div className=" flex w-full h-full justify-center place-items-center relative">

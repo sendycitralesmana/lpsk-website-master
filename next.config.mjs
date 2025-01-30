@@ -18,6 +18,14 @@ const nextConfig = {
                 protocol: "https",
                 hostname: "bucket.mareca.my.id",
             },
+            {
+                protocol: "https",
+                hostname: "portal.lpsk.go.id",
+            },
+            {
+                protocol: "https",
+                hostname: "bucket.lpsk.go.id",
+            },
         ]
     }
 };

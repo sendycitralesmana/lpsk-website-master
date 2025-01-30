@@ -3,7 +3,7 @@
 import { fetcher } from "@/lib/server/fetcher";
 import { TQuery, TQueryCategory } from "@/types/api";
 
-const BASE_PATH = "/api/profile";
+const BASE_PATH = "/backoffice/api/profile";
 
 export const findProfile = async (id: string) => {
   const resp = await fetcher(`${BASE_PATH}/${id}`);
