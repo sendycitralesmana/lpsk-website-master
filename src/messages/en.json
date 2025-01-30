@@ -1,0 +1,98 @@
+{
+  "applicationInternal": [
+    {
+      "name": "Kasus Prioritas",
+      "path": "/kasus-prioritas",
+      "image": "/images/information/kasus-prioritas.png"
+    },
+    {
+      "name": "Mekanisme Permintaan Permohonan",
+      "path": "/mekanisme-permohonan",
+      "image": "/images/information/mekanisme-permohonan.png"
+    },
+    {
+      "name": "Program Perlindungan",
+      "path": "/program-perlindungan",
+      "image": "/images/information/program-perlindungan.png"
+    },
+    {
+      "name": "Subjek Perlindungan",
+      "path": "/subjek-perlindungan",
+      "image": "/images/information/subjek-perlindungan.png"
+    }
+  ],
+  "theme": {
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
+  },
+  "accessbillity": {
+    "title": "Accessbillity",
+    "reset": "Reset",
+    "saturate": "Saturate",
+    "contrast": "Contrast",
+    "brightness": "Brightness",
+    "grayscale": "Grayscale",
+    "invert": "Invert",
+    "sepia": "Sepia",
+    "fontSize": "Font Size",
+    "theme": "Theme",
+    "highlightLink": "Highlight Link"
+  },
+  "navigation": [
+    {
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "name": "Profile",
+      "path": "/profile",
+      "children": [
+        {
+          "name": "Profil Lembaga",
+          "path": "/profil/lembaga"
+        },
+        {
+          "name": "Pejabat",
+          "path": "/profil/pejabat"
+        },
+        {
+          "name": "Struktur Organisasi",
+          "path": "/profil/struktur"
+        },
+        {
+          "name": "Unit Kerja",
+          "path": "/profil/unit-kerja"
+        },
+        {
+          "name": "Roadmap dan Rencana Strategi",
+          "path": "/profil/roadmap"
+        },
+        {
+          "name": "Tindak Pidana Prioritas",
+          "path": "/profil/prioritas"
+        },
+        {
+          "name": "Ketentuan Logo",
+          "path": "/profil/logo"
+        }
+      ]
+    },
+    {
+      "name": "Delegation",
+      "path": "/delegation"
+    },
+    {
+      "name": "Service",
+      "path": "/service"
+    },
+    {
+      "name": "PPID",
+      "path": "/ppid"
+    },
+    {
+      "name": "Public Information",
+      "path": "/public-information"
+    }
+  ]
+}

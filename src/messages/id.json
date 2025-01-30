@@ -1,0 +1,187 @@
+{
+  "applicationInternal": [
+    {
+      "name": "Kasus Prioritas",
+      "path": "/kasus-prioritas",
+      "image": "/images/information/kasus-prioritas.png"
+    },
+    {
+      "name": "Mekanisme Permintaan Permohonan",
+      "path": "/mekanisme-permohonan",
+      "image": "/images/information/mekanisme-permohonan.png"
+    },
+    {
+      "name": "Program Perlindungan",
+      "path": "/program-perlindungan",
+      "image": "/images/information/program-perlindungan.png"
+    },
+    {
+      "name": "Subjek Perlindungan",
+      "path": "/subjek-perlindungan",
+      "image": "/images/information/subjek-perlindungan.png"
+    }
+  ],
+  "accessbillity": {
+    "title": "Aksesibilitas",
+    "reset": "Reset",
+    "saturate": "Saturasi",
+    "contrast": "Kontras",
+    "brightness": "Kecerahan",
+    "grayscale": "Abu - abu",
+    "invert": "Kebalikan",
+    "sepia": "Sepia",
+    "fontSize": "Ukuran Huruf",
+    "theme": "Tema",
+    "highlightLink": "Sorot Tautan"
+  },
+  "navigation": [
+    {
+      "name": "Beranda",
+      "path": "/"
+    },
+    {
+      "name": "Profil",
+      "path": "/profil",
+      "children": [
+        {
+          "name": "Profil Lembaga",
+          "path": "/profil/lembaga"
+        },
+        {
+          "name": "Pejabat",
+          "path": "/profil/pejabat"
+        },
+        {
+          "name": "Struktur Organisasi",
+          "path": "/profil/struktur"
+        },
+        {
+          "name": "Unit Kerja",
+          "path": "/profil/unit-kerja"
+        },
+        {
+          "name": "Roadmap dan Rencana Strategi",
+          "path": "/profil/roadmap"
+        }
+      ]
+    },
+    {
+      "name": "Perwakilan",
+      "path": "/perwakilan"
+    },
+    {
+      "name": "Layanan",
+      "path": "/layanan",
+      "children": [
+        {
+          "name": "Maklumat Pelayanan",
+          "path": "/layanan/maklumat-pelayanan"
+        },
+        {
+          "name": "Standar Pelayanan Publik di lingkungan LPSK",
+          "path": "/layanan/pelayanan-publik"
+        },
+        {
+          "name": "Standar Pelayanan Penerimaan Permohonan",
+          "path": "/layanan/penerimaan-permohonan"
+        },
+        {
+          "name": "Standar Pelayanan Pemberian Pelayanan Darurat",
+          "path": "/layanan/pemberian-perlindungan-darurat"
+        },
+        {
+          "name": "Standar Pelayanan Tindakan Proaktif",
+          "path": "/layanan/tindakan-proaktif"
+        },
+        {
+          "name": "Standar Pelayana Pemberian Perlindungan",
+          "path": "/layanan/pemberian-perlindungan"
+        },
+        {
+          "name": "Standar Pelayanan Permintaan Informasi Publik LPSK",
+          "path": "/layanan/permintaan-informasi-publik"
+        },
+        {
+          "name": "Laporan Surver Kepuasan Masyarakat",
+          "path": "/layanan/laporan-survey"
+        },
+        {
+          "name": "Pengaduan Pelayanan Publik",
+          "path": "https://docs.google.com/forms/d/e/1FAIpQLScZtI-6ViU-TwZ4dfqhtE2kqj3HzKsFru_-Smx7RroqhOmSWg/viewform?pli=1"
+        },
+        {
+          "name": "LAPOR!!",
+          "path": "https://www.lapor.go.id/"
+        },
+        {
+          "name": "E-PPID",
+          "path": "https://eppid.lpsk.go.id/"
+        }
+      ]
+    },
+    {
+      "name": "PPID",
+      "path": "/ppid"
+    },
+    {
+      "name": "Berita",
+      "path": "/berita",
+      "children": [
+        {
+          "name": "Artikel",
+          "path": "/berita/artikel"
+        },
+        {
+          "name": "Informasi",
+          "path": "/berita/informasi"
+        },
+        {
+          "name": "Warta Hukum",
+          "path": "/berita/warta-hukum"
+        },
+        {
+          "name": "Siaran Pers",
+          "path": "/berita/siaran-pers"
+        }
+      ]
+    },
+    {
+      "name": "Publikasi",
+      "path": "/publikasi",
+      "children": [
+        {
+          "name": "Foto",
+          "path": "/publikasi/foto"
+        },
+        {
+          "name": "Buletin",
+          "path": "/publikasi/buletin"
+        },
+        {
+          "name": "Kegiatan",
+          "path": "/publikasi/kegiatan"
+        },
+        {
+          "name": "Video",
+          "path": "/publikasi/video"
+        },
+        {
+          "name": "Buku",
+          "path": "/publikasi/buku"
+        },
+        {
+          "name": "Policy Papper",
+          "path": "/publikasi/policy-papper"
+        },
+        {
+          "name": "Jurnal",
+          "path": "/publikasi/jurnal"
+        },
+        {
+          "name": "Laporan",
+          "path": "/publikasi/laporan"
+        }
+      ]
+    }
+  ]
+}
