@@ -5,9 +5,17 @@ import { Card } from "../ui/card";
 import { Button } from "../ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import Image from "next/image";
+import { useState } from "react";
 
 
 const PublicationPreview = () => {
+
+  const [buku, setArtikel] = useState<any[]>([]);
+  const [laporan, setLaporan] = useState<any[]>([]);
+  const [jurnal, setJurnal] = useState<any[]>([]);
+  const [buletin, setBuletin] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
   return (
     <section className="w-screen">
       <div className="container flex flex-col gap-5 place-items-center px-28">

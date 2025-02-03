@@ -32,7 +32,7 @@ const PejabatPage = () => {
   return (
     <main className="flex flex-col gap-10">
 
-      <div className=" h-[400px] w-full bg-background">
+      {/* <div className=" h-[400px] w-full bg-background">
         <div className=" flex w-full h-full justify-center place-items-center relative">
           <div className="h-full w-full absolute bg-slate-800">
             <Image
@@ -49,9 +49,9 @@ const PejabatPage = () => {
             </h1>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      {loading ? (
+      {/* {loading ? (
         <div className="w-full relative  bg-background">
           <AppContainer>
             <div className="grid grid-cols-6 md:grid-cols-12 h-full gap-5 py-5">
@@ -107,9 +107,9 @@ const PejabatPage = () => {
             </AppContainer>
           </div>
         ))
-      )}
+      )} */}
 
-      {/* <div className=" h-[400px] w-full bg-background">
+      <div className=" h-[400px] w-full bg-background">
         <div className=" flex w-full h-full justify-center place-items-center relative">
           <div className="h-full w-full absolute bg-slate-800">
             <Image
@@ -488,7 +488,7 @@ const PejabatPage = () => {
             </div>
           </div>
         </AppContainer>
-      </div> */}
+      </div>
     </main>
   );
 };

@@ -24,7 +24,7 @@ export default async function Home() {
       <PublicationPreview />
       <StatisticsPreview />
       <ApplicationExternalSection />
-      <ClientPreview />
+      {/* <ClientPreview /> */}
     </main>
   );
 }
