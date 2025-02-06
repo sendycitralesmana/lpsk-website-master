@@ -370,7 +370,7 @@
 
 // export default PublikasiPage;
 
-"use client"; // Ensure this is a client-side component
+"use client";
 
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";

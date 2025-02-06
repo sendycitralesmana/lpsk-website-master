@@ -82,7 +82,7 @@ const NewsSection = () => {
           </Card>
         </div> */}
         <div className="col-span-1 hidden sm:block">
-          <Card className="h-full w-full relative">
+          <Card className="h-[350px] w-full relative">
             <Image src="/images/lpsk-lg.png" fill alt="Random Image" />
           </Card>
         </div>
