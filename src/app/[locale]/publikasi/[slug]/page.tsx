@@ -495,11 +495,13 @@ const PublikasiPage = ({ params }: any) => {
               <h3 className="font-bold text-white">{item.title}</h3>
               <div className="flex gap-2 justify-end">
                 {item?.document_url?.split(".").pop() === "pdf" && <ShowPDF url={item.document_url} />}
-                <Button size={"icon"} asChild>
-                  <Link download={true} href={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.document_url}`}>
-                    <DownloadIcon />
-                  </Link>
-                </Button>
+                {item.document_url &&
+                  <Button size={"icon"} asChild>
+                    <Link download={true} href={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.document_url}`}>
+                      <DownloadIcon />
+                    </Link>
+                  </Button>
+                }
               </div>
               {/* <Image
                 fill

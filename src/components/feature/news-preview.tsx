@@ -105,7 +105,7 @@ const NewsSection = () => {
                     <div>Loading...</div>
                   ) : (
                     artikel.map((item) => (
-                      // <Link key={item.id} href={`/id/berita/artikel/${item.id}`}>
+                      <Link key={item.id} href={`/id/berita/artikel/${item.id}`}>
                         <div className="p-2 rounded flex flex-col w-full gap-1 cursor-pointer group hover:bg-neutral-100 transition-colors duration-300">
                           <p className="font-bold group-hover:text-blue-900 transition-colors duration-300">
                             {item.title}
@@ -115,12 +115,20 @@ const NewsSection = () => {
                           </small>
                           <Separator />
                         </div>
-                      // </Link>
+                      </Link>
                     ))
                   )}
-                  <Button size={"sm"} className="w-fit">
+                  {/* <Button size={"sm"} className="w-fit">
                     Selengkapnya
-                  </Button>
+                  </Button> */}
+                  <Link
+                    href={"/id/berita/artikel"}
+                    className="w-fit flex items-center gap-2"
+                  >
+                    <Button size={"sm"} className="w-fit">
+                      Selengkapnya
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -133,7 +141,7 @@ const NewsSection = () => {
                     <div>Loading...</div>
                   ) : (
                     informasi.map((item) => (
-                      // <Link key={item.id} href={`/berita/information/${item.slug}`}>
+                      <Link key={item.id} href={`/id/berita/information/${item.id}`}>
                         <div className="p-2 rounded flex flex-col w-full gap-1 cursor-pointer group hover:bg-neutral-100 transition-colors duration-300">
                           <p className="font-bold group-hover:text-blue-900 transition-colors duration-300">
                             {item.title}
@@ -143,12 +151,20 @@ const NewsSection = () => {
                           </small>
                           <Separator />
                         </div>
-                      // </Link>
+                      </Link>
                     ))
                   )}
-                  <Button size={"sm"} className="w-fit">
+                  {/* <Button size={"sm"} className="w-fit">
                     Selengkapnya
-                  </Button>
+                  </Button> */}
+                  <Link
+                    href={"/id/berita/informasi"}
+                    className="w-fit flex items-center gap-2"
+                  >
+                    <Button size={"sm"} className="w-fit">
+                      Selengkapnya
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </TabsContent>

@@ -63,9 +63,16 @@ const ArtikelPage = async ({ params }: ArtikelPageProps) => {
           </BreadcrumbList>
         </Breadcrumb>
         <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${addSlashIfNotExist(
-            data?.cover ?? "/default.webp"
-          )}`}
+          // src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${addSlashIfNotExist(
+          //   data?.cover ?? "/default.webp"
+          // )}`}
+
+          src={data.cover != null
+            ? `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${addSlashIfNotExist(
+              data.cover)}`
+            : "/images/default.webp"
+          }
+
           alt="image"
           fill
           className="object-cover h-full w-full -z-20"
@@ -178,9 +185,17 @@ const ArtikelPage = async ({ params }: ArtikelPageProps) => {
               </h3>
               <Image
                 fill
-                src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${
-                  data?.cover ?? "/default.webp"
-                }`}
+                // src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${
+                //   data?.cover ?? "/default.webp"
+                // }`}
+
+                src={data.cover != null
+                  ? `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${addSlashIfNotExist(
+                    data?.cover
+                  )}`
+                  : `/images/default.webp`
+                }
+
                 alt="LPSK"
                 className=" object-cover -z-20 group-hover:scale-125 transition-all duration-300"
               />

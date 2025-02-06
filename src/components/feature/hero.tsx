@@ -18,8 +18,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Link } from "@/lib/i18n/routing";
+import { Item } from "@radix-ui/react-dropdown-menu";
 
 const Hero = ({ data: { data } }: { data: { data: any[] } }) => {
+
+  // console.log(data);
+    
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -48,11 +52,18 @@ const Hero = ({ data: { data } }: { data: { data: any[] } }) => {
         <CarouselContent className="w-full">
           {data.map((item: any) => (
             <HeroItem
+              dataItem={item}
               key={item.id}
               title={item.news.title}
-              image={process.env.NEXT_PUBLIC_BASE_BUCKET_URL + item.news.cover}
-              date="29 Oktober 2022"
-              redirect="/"
+              // image={process.env.NEXT_PUBLIC_BASE_BUCKET_URL + item.news.cover}
+
+              image={item.news.cover != null
+                ? `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.news.cover}`
+                : "/images/default.webp"
+              }
+
+              date={item.news.created_at}
+              redirect={`/${item.news.slug}/${item.news.id}`}
             />
           ))}
         </CarouselContent>
@@ -84,9 +95,13 @@ type TAppCaoruselItem = {
   image: string;
   date?: string;
   redirect?: string;
+  dataItem?: any;
 };
 
-const HeroItem = ({ title, image, date, redirect }: TAppCaoruselItem) => {
+const HeroItem = ({ title, image, date, redirect, dataItem }: TAppCaoruselItem) => {
+
+  console.log(dataItem);
+
   return (
     <CarouselItem className="basis-full">
       <div className="w-screen aspect-[9/16]  md:aspect-video relative">
@@ -100,7 +115,7 @@ const HeroItem = ({ title, image, date, redirect }: TAppCaoruselItem) => {
             <h1 className="font-bold max-w-5xl">{title}</h1>
             {!!redirect && (
               <Button asChild className="w-fit">
-                <Link href={redirect}>Selengkapnya</Link>
+                <Link href={`/berita/${dataItem.newsCategory.slug}/${dataItem.news.id}`}>Selengkapnya</Link>
               </Button>
             )}
           </div>

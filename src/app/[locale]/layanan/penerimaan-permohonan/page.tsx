@@ -39,7 +39,7 @@ const AppPage = () => {
                 <Button asChild>
                   <a
                     download
-                    href="/informasi-pelayanan/penerimaan-permohonan/Hal 7-11 Peraturan LPSK No. 1 Tahun 2024 tentang Standar Pelayanan di Lingkungan LPSK.pdf"
+                    href="/pdf/Hal 7-11 Peraturan LPSK No. 1 Tahun 2024 tentang Standar Pelayanan di Lingkungan LPSK.pdf"
                     className="flex gap-2"
                   >
                     <DownloadCloudIcon /> Unduh
