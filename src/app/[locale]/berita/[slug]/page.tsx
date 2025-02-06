@@ -333,12 +333,21 @@ const ArtikelPage = async ({ params, searchParams }: ArtikelPageProps) => {
                   <small>{item.created_at}</small>
                 </Badge>
                 <h3 className="font-bold text-white">{item?.title?.slice(0, 50)}</h3>
-                <Image
+                {/* <Image
                   fill
                   src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${item.cover ?? "/default.webp"}`}
                   alt="LPSK"
                   className="object-cover -z-20 group-hover:scale-125 transition-all duration-300"
-                />
+                /> */}
+                <Image
+                  fill
+                  src={item.cover !== 'NULL'
+                    ? `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover}`
+                    : '/images/default.webp'
+                  }
+                  alt="LPSK"
+                  className="object-cover -z-20 group-hover:scale-125 transition-all duration-300 !m-0"
+                /> 
                 <div className="absolute left-0 top-0 w-full h-full bg-black/15 -z-10"></div>
               </Card>
             </Link>

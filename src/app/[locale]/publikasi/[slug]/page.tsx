@@ -501,9 +501,18 @@ const PublikasiPage = ({ params }: any) => {
                   </Link>
                 </Button>
               </div>
-              <Image
+              {/* <Image
                 fill
                 src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover ?? "/default.webp"}`}
+                alt="LPSK"
+                className="object-cover -z-20 group-hover:scale-125 transition-all duration-300 !m-0"
+              /> */}
+              <Image
+                fill
+                src={item.cover !== 'NULL'
+                  ? `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover}`
+                  : '/images/default.webp'
+                }
                 alt="LPSK"
                 className="object-cover -z-20 group-hover:scale-125 transition-all duration-300 !m-0"
               />
