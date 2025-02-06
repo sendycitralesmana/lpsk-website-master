@@ -105,7 +105,7 @@ const NewsSection = () => {
                     <div>Loading...</div>
                   ) : (
                     artikel.map((item) => (
-                      <Link key={item.id} href={`/id/berita/artikel/${item.id}`}>
+                      // <Link key={item.id} href={`/id/berita/artikel/${item.id}`}>
                         <div className="p-2 rounded flex flex-col w-full gap-1 cursor-pointer group hover:bg-neutral-100 transition-colors duration-300">
                           <p className="font-bold group-hover:text-blue-900 transition-colors duration-300">
                             {item.title}
@@ -115,7 +115,7 @@ const NewsSection = () => {
                           </small>
                           <Separator />
                         </div>
-                      </Link>
+                      // </Link>
                     ))
                   )}
                   <Button size={"sm"} className="w-fit">
@@ -133,7 +133,7 @@ const NewsSection = () => {
                     <div>Loading...</div>
                   ) : (
                     informasi.map((item) => (
-                      <Link key={item.id} href={`/berita/information/${item.slug}`}>
+                      // <Link key={item.id} href={`/berita/information/${item.slug}`}>
                         <div className="p-2 rounded flex flex-col w-full gap-1 cursor-pointer group hover:bg-neutral-100 transition-colors duration-300">
                           <p className="font-bold group-hover:text-blue-900 transition-colors duration-300">
                             {item.title}
@@ -143,7 +143,7 @@ const NewsSection = () => {
                           </small>
                           <Separator />
                         </div>
-                      </Link>
+                      // </Link>
                     ))
                   )}
                   <Button size={"sm"} className="w-fit">

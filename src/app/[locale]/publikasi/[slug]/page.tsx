@@ -496,7 +496,7 @@ const PublikasiPage = ({ params }: any) => {
               <div className="flex gap-2 justify-end">
                 {item?.document_url?.split(".").pop() === "pdf" && <ShowPDF url={item.document_url} />}
                 <Button size={"icon"} asChild>
-                  <Link download={true} href={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${item.document_url}`}>
+                  <Link download={true} href={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.document_url}`}>
                     <DownloadIcon />
                   </Link>
                 </Button>
@@ -509,7 +509,7 @@ const PublikasiPage = ({ params }: any) => {
               /> */}
               <Image
                 fill
-                src={item.cover !== null
+                src={item.cover != null
                   ? `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover}`
                   : '/images/default.webp'
                 }

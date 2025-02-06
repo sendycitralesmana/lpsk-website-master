@@ -341,7 +341,7 @@ const ArtikelPage = async ({ params, searchParams }: ArtikelPageProps) => {
                 /> */}
                 <Image
                   fill
-                  src={item.cover !== null
+                  src={item.cover != null
                     ? `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover}`
                     : '/images/default.webp'
                   }
