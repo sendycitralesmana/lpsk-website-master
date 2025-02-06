@@ -117,7 +117,8 @@ const HeroItem = ({ title, image, date, redirect, dataItem }: TAppCaoruselItem) 
         </div>
         <Image
           fill
-          src={image}
+          // src={image}
+          src={image ? image : "/images/default.webp"}
           alt="LPSK"
           className=" object-cover object-center -z-20 absolute top-0 !m-0"
         />
