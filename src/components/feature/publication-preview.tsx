@@ -136,7 +136,11 @@ const PublicationPreview = () => {
                   // <Link key={index} href={item.link}>
                     <Card className=" aspect-[3/4] relative rounded overflow-hidden group">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${item.cover ?? "/default.webp"}`}
+                        src={item.cover !== null
+                          ? `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover}`
+                          : '/images/default.webp'
+                        }
+                        // src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${item.cover ?? "/default.webp"}`}
                         // src={item.image}
                         alt=""
                         fill
@@ -175,7 +179,7 @@ const PublicationPreview = () => {
                     <Card className=" aspect-[3/4] relative rounded overflow-hidden group">
                       <Image
                         src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover ?? "/default.webp"}`}
-                        // `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover ?? "/default.webp"}`
+                        // `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover ?? "/default.webp"}` 
                         // src={item.image}
                         alt=""
                         fill
@@ -213,7 +217,11 @@ const PublicationPreview = () => {
                   // <Link key={index} href={item.link}>
                     <Card className=" aspect-[3/4] relative rounded overflow-hidden group">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${item.cover ?? "/default.webp"}`}
+                        src={item.cover !== null
+                          ? `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover}`
+                          : '/images/default.webp'
+                        }
+                        // src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${item.cover ?? "/default.webp"}`}
                         // src={item.image}
                         alt=""
                         fill
@@ -250,7 +258,11 @@ const PublicationPreview = () => {
                   // <Link key={index} href={item.link}>
                     <Card className=" aspect-[3/4] relative rounded overflow-hidden group">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${item.cover ?? "/default.webp"}`}
+                        src={item.cover !== null
+                          ? `${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}/${item.cover}`
+                          : '/images/default.webp'
+                        }
+                        // src={`${process.env.NEXT_PUBLIC_BASE_BUCKET_URL}${item.cover ?? "/default.webp"}`}
                         // src={item.image}
                         alt=""
                         fill
