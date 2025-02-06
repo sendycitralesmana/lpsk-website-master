@@ -39,7 +39,7 @@ const ApplicationExternalSection = () => {
           <CarouselContent className="w-full container">
             <CarouselItem className="basis-1/4 aspect-video relative rounded overflow-clip ">
               <Card className=" aspect-video bg-transparent shadow rounded overflow-hidden group select-none">
-                <Link href={"/"}>
+                <Link href={"https://robinops.bareskrim.polri.go.id/Account/Login?ReturnUrl=%2F"} target="_blank" rel="noopener noreforever">
                   <CardContent className="p-0 aspect-video relative h-full w-full">
                     <div className="h-full w-full flex flex-col text-white p-5 justify-end basis-4">
                       <h3 className="font-bold text-base">E - MANAJEMEN PENYIDIKAN POLRI</h3>
@@ -57,7 +57,7 @@ const ApplicationExternalSection = () => {
             </CarouselItem>
             <CarouselItem className="basis-1/4 aspect-video relative rounded overflow-clip ">
               <Card className=" aspect-video bg-transparent shadow rounded overflow-hidden group select-none">
-                <Link href={"/"}>
+                <Link href={"https://mindik.bnn.go.id/#/pages/login"} target="_blank" rel="noopener noreferrer">
                   <CardContent className="p-0 aspect-video relative h-full w-full">
                     <div className="h-full w-full flex flex-col text-white p-5 justify-end basis-4">
                       <h3 className="font-bold text-base">E - MINDIK BNN</h3>
@@ -75,7 +75,7 @@ const ApplicationExternalSection = () => {
             </CarouselItem>
             <CarouselItem className="basis-1/4 aspect-video relative rounded overflow-clip ">
               <Card className=" aspect-video bg-transparent shadow rounded overflow-hidden group select-none">
-                <Link href={"/"}>
+                <Link href={"/https://cms-publik.kejaksaan.go.id/"} target="_blank" rel="noopener noreferrer">
                   <CardContent className="p-0 aspect-video relative h-full w-full">
                     <div className="h-full w-full flex flex-col text-white p-5 justify-end basis-4">
                       <h3 className="font-bold text-base">CMS PUBLIK KEJAKSAAN RI</h3>
@@ -93,7 +93,7 @@ const ApplicationExternalSection = () => {
             </CarouselItem>
             <CarouselItem className="basis-1/4 aspect-video relative rounded overflow-clip ">
               <Card className=" aspect-video bg-transparent shadow rounded overflow-hidden group select-none">
-                <Link href={"/"}>
+                <Link href={"https://mindik.bnn.go.id/#/pages/login"} target="_blank" rel="noopener noreferrer">
                   <CardContent className="p-0 aspect-video relative h-full w-full">
                     <div className="h-full w-full flex flex-col text-white p-5 justify-end basis-4">
                       <h3 className="font-bold text-base">SDP KEMENKUMHAM</h3>
@@ -111,7 +111,7 @@ const ApplicationExternalSection = () => {
             </CarouselItem>
             <CarouselItem className="basis-1/4 aspect-video relative rounded overflow-clip ">
               <Card className=" aspect-video bg-transparent shadow rounded overflow-hidden group select-none">
-                <Link href={"/"}>
+                <Link href={"https://kpk.go.id/"} target="_blank" rel="noopener noreferrer">
                   <CardContent className="p-0 aspect-video relative h-full w-full">
                     <div className="h-full w-full flex flex-col text-white p-5 justify-end basis-4">
                       <h3 className="font-bold text-base">KPK</h3>
@@ -129,7 +129,7 @@ const ApplicationExternalSection = () => {
             </CarouselItem>
             <CarouselItem className="basis-1/4 aspect-video relative rounded overflow-clip ">
               <Card className=" aspect-video bg-transparent shadow rounded overflow-hidden group select-none">
-                <Link href={"/"}>
+                <Link href={"https://www.lapor.go.id/"} target="_blank" rel="noopener noreferrer">
                   <CardContent className="p-0 aspect-video relative h-full w-full">
                     <div className="h-full w-full flex flex-col text-white p-5 justify-end basis-4">
                       <h3 className="font-bold text-base">SIGAP LAPOR</h3>

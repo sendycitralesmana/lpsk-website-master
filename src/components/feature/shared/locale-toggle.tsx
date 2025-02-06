@@ -23,20 +23,21 @@ export function LocaleToggle() {
   
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon" className=" aspect-square">
-          {locale.toUpperCase()}
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => changeLocale("id")}>
-          ID
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLocale("en")}>
-          EN
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <></>
+    // <DropdownMenu>
+    //   <DropdownMenuTrigger asChild>
+    //     <Button variant="outline" size="icon" className=" aspect-square">
+    //       {locale.toUpperCase()}
+    //     </Button>
+    //   </DropdownMenuTrigger>
+    //   <DropdownMenuContent align="end">
+    //     <DropdownMenuItem onClick={() => changeLocale("id")}>
+    //       ID
+    //     </DropdownMenuItem>
+    //     <DropdownMenuItem onClick={() => changeLocale("en")}>
+    //       EN
+    //     </DropdownMenuItem>
+    //   </DropdownMenuContent>
+    // </DropdownMenu>
   );
 }

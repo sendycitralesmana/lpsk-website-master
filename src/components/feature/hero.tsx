@@ -46,7 +46,7 @@ const Hero = ({ data: { data } }: { data: { data: any[] } }) => {
         ]}
       >
         <CarouselContent className="w-full">
-          {data.map((item: any) => (
+          {/* {data.map((item: any) => (
             <HeroItem
               key={item.id}
               title={item.news.title}
@@ -54,7 +54,7 @@ const Hero = ({ data: { data } }: { data: { data: any[] } }) => {
               date="29 Oktober 2022"
               redirect="/"
             />
-          ))}
+          ))} */}
         </CarouselContent>
         <CarouselPrevious className="hidden xl:flex absolute left-5 top-1/2  -translate-y-1/2" />
         <CarouselNext className=" hidden xl:flex absolute right-5 top-1/2  -translate-y-1/2" />

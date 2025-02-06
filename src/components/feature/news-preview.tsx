@@ -76,12 +76,17 @@ const NewsSection = () => {
   return (
     <section className="w-full">
       <div className="grid grid-cols-3 gap-4 container">
-        <div className="col-span-1">
+        {/* <div className="col-span-1">
           <Card className="h-full w-full relative">
             <Image src={"/images/lpsk-lg.png"} fill alt="Random Image" />
           </Card>
+        </div> */}
+        <div className="col-span-1 hidden sm:block">
+          <Card className="h-full w-full relative">
+            <Image src="/images/lpsk-lg.png" fill alt="Random Image" />
+          </Card>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-3 md:col-span-2">
           <Tabs defaultValue="news" className="w-full">
             <TabsList className="w-full bg-neutral-200">
               <TabsTrigger value="news" className="flex-1">
@@ -100,7 +105,7 @@ const NewsSection = () => {
                     <div>Loading...</div>
                   ) : (
                     artikel.map((item) => (
-                      <Link key={item.id} href={`/berita/artikel/${item.id}`}>
+                      <Link key={item.id} href={`/id/berita/artikel/${item.id}`}>
                         <div className="p-2 rounded flex flex-col w-full gap-1 cursor-pointer group hover:bg-neutral-100 transition-colors duration-300">
                           <p className="font-bold group-hover:text-blue-900 transition-colors duration-300">
                             {item.title}
@@ -128,7 +133,7 @@ const NewsSection = () => {
                     <div>Loading...</div>
                   ) : (
                     informasi.map((item) => (
-                      <Link key={item.id} href={`/berita/information/${item.slug}`}>
+                      // <Link key={item.id} href={`/berita/information/${item.slug}`}>
                         <div className="p-2 rounded flex flex-col w-full gap-1 cursor-pointer group hover:bg-neutral-100 transition-colors duration-300">
                           <p className="font-bold group-hover:text-blue-900 transition-colors duration-300">
                             {item.title}
@@ -138,7 +143,7 @@ const NewsSection = () => {
                           </small>
                           <Separator />
                         </div>
-                      </Link>
+                      // </Link>
                     ))
                   )}
                   <Button size={"sm"} className="w-fit">

@@ -70,7 +70,8 @@ const Header = () => {
             );
           })}
         </nav>
-        <div className="flex gap-2 place-items-center">
+        
+        {/* <div className="flex gap-2 place-items-center">
           <Search/>
           <LocaleToggle/>
           <Sheet>
@@ -97,6 +98,62 @@ const Header = () => {
                   ))}
                 </nav>
               </SheetHeader>
+            </SheetContent>
+          </Sheet>
+        </div> */}
+        
+        {/* Mobile Navigation */}
+        <div className="flex gap-2 items-center">
+          <Search />
+          <LocaleToggle />
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button size="icon" variant="outline" className="border-2 lg:hidden h-8 w-8">
+                <MenuIcon />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left">
+              <SheetHeader>
+                <SheetTitle className="text-left">LPSK</SheetTitle>
+                <SheetDescription className="text-left">
+                  Lembaga Perlindungan Saksi dan Korban
+                </SheetDescription>
+              </SheetHeader>
+
+              {/* Mobile Menu */}
+              <nav className="mt-5 flex flex-col text-sm">
+                {menu.map(({ name, path, children }) => (
+                  <div key={name} className="mb-2">
+                    {children ? (
+                      <details className="group">
+                        <summary className="flex justify-between items-center px-4 py-2 cursor-pointer">
+                          <span>{name}</span>
+                          <ChevronDown
+                            size={16}
+                            className="group-open:rotate-180 transition-all"
+                          />
+                        </summary>
+                        <div className="pl-4">
+                          {children.map(({ name, path }) => (
+                            <Link
+                              href={path}
+                              key={name}
+                              target={path.startsWith("http") ? "_blank" : "_self"}
+                              className="block py-1 hover:text-blue-800"
+                            >
+                              {name}
+                            </Link>
+                          ))}
+                        </div>
+                      </details>
+                    ) : (
+                      <Link href={path} className="block px-4 py-2 hover:text-blue-800">
+                        {name}
+                      </Link>
+                    )}
+                  </div>
+                ))}
+              </nav>
             </SheetContent>
           </Sheet>
         </div>
