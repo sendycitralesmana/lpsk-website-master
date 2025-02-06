@@ -21,9 +21,6 @@ import { Link } from "@/lib/i18n/routing";
 import { Item } from "@radix-ui/react-dropdown-menu";
 
 const Hero = ({ data: { data } }: { data: { data: any[] } }) => {
-
-  // console.log(data);
-    
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -99,8 +96,6 @@ type TAppCaoruselItem = {
 };
 
 const HeroItem = ({ title, image, date, redirect, dataItem }: TAppCaoruselItem) => {
-
-  console.log(dataItem);
 
   return (
     <CarouselItem className="basis-full">
