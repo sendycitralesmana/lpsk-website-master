@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Card } from "../ui/card";
+import Link from "next/link";
 
 const ApplicationSection = () => {
   return (
@@ -11,16 +12,18 @@ const ApplicationSection = () => {
         <div className="w-full grid grid-cols-4 gap-2">
           <div className="col-span-4 grid grid-cols-3 gap-2">
             <Card className="aspect-[4/3] relative overflow-hidden bg-transparent group rounded">
-              <div className="h-full w-full flex flex-col text-white p-5 justify-end">
-                <p className="font-bold">SIMPUSAKA</p>
-              </div>
-              <Image
-                src={"/images/internal/simpusaka.webp"}
-                alt=""
-                fill
-                className="object-center object-cover -z-20 group-hover:scale-105 transition-all duration-300"
-              />
-              <div className=" h-full w-full bg-black/25 group-hover:bg-primary/35 absolute top-0 -z-10 transition-colors duration-300"></div>
+              <Link href={"https://simpusaka.lpsk.go.id/layanan_simpusaka/"} target="_blank" rel="noopener noreferrer">
+                <div className="h-full w-full flex flex-col text-white p-5 justify-end">
+                  <p className="font-bold">SIMPUSAKA</p>
+                </div>
+                <Image
+                  src={"/images/internal/simpusaka.webp"}
+                  alt=""
+                  fill
+                  className="object-center object-cover -z-20 group-hover:scale-105 transition-all duration-300"
+                />
+                <div className=" h-full w-full bg-black/25 group-hover:bg-primary/35 absolute top-0 -z-10 transition-colors duration-300"></div>
+              </Link>
             </Card>
             <Card className="aspect-[4/3] relative overflow-hidden bg-transparent group rounded">
               <div className="h-full w-full flex flex-col text-white p-5 justify-end">
