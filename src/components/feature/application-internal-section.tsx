@@ -50,40 +50,46 @@ const ApplicationSection = () => {
               <div className=" h-full w-full bg-black/25 group-hover:bg-primary/35 absolute top-0 -z-10 transition-colors duration-300"></div>
             </Card>
             <Card className="aspect-[4/3] relative overflow-hidden bg-transparent group rounded">
-              <div className="h-full w-full flex flex-col text-white p-5 justify-end">
-                <p className="font-bold">Tracking Permohonan</p>
-              </div>
-              <Image
-                src={"/images/internal/tracking.webp"}
-                alt=""
-                fill
-                className="object-center object-cover -z-20 group-hover:scale-105 transition-all duration-300"
-              />
-              <div className=" h-full w-full bg-black/25 group-hover:bg-primary/35 absolute top-0 -z-10 transition-colors duration-300"></div>
+              <Link href={"https://hukum.lpsk.go.id/"} target="_blank" rel="noopener noreferrer">
+                <div className="h-full w-full flex flex-col text-white p-5 justify-end">
+                  <p className="font-bold">Tracking Permohonan</p>
+                </div>
+                <Image
+                  src={"/images/internal/tracking.webp"}
+                  alt=""
+                  fill
+                  className="object-center object-cover -z-20 group-hover:scale-105 transition-all duration-300"
+                />
+                <div className=" h-full w-full bg-black/25 group-hover:bg-primary/35 absolute top-0 -z-10 transition-colors duration-300"></div>
+              </Link>
             </Card>
             <Card className="aspect-[4/3] relative overflow-hidden bg-transparent group rounded">
-              <div className="h-full w-full flex flex-col text-white p-5 justify-end">
-                <p className="font-bold">JDIH</p>
-              </div>
-              <Image
-                src={"/images/internal/jdih.webp"}
-                alt=""
-                fill
-                className="object-center object-cover -z-20 group-hover:scale-105 transition-all duration-300"
-              />
-              <div className=" h-full w-full bg-black/25 group-hover:bg-primary/35 absolute top-0 -z-10 transition-colors duration-300"></div>
+              <Link href={"https://jdih.lpsk.go.id/"} target="_blank" rel="noopener noreferrer">
+                <div className="h-full w-full flex flex-col text-white p-5 justify-end">
+                  <p className="font-bold">JDIH</p>
+                </div>
+                <Image
+                  src={"/images/internal/jdih.webp"}
+                  alt=""
+                  fill
+                  className="object-center object-cover -z-20 group-hover:scale-105 transition-all duration-300"
+                />
+                <div className=" h-full w-full bg-black/25 group-hover:bg-primary/35 absolute top-0 -z-10 transition-colors duration-300"></div>
+              </Link>
             </Card>
             <Card className="aspect-[4/3] relative overflow-hidden bg-transparent group rounded">
-              <div className="h-full w-full flex flex-col text-white p-5 justify-end">
-                <p className="font-bold">EPPID</p>
-              </div>
-              <Image
-                src={"/images/internal/eppid.webp"}
-                alt=""
-                fill
-                className="object-center object-cover -z-20 group-hover:scale-105 transition-all duration-300"
-              />
-              <div className=" h-full w-full bg-black/25 group-hover:bg-primary/35 absolute top-0 -z-10 transition-colors duration-300"></div>
+              <Link href={"https://eppid.lpsk.go.id/"} target="_blank" rel="noopener noreferrer">
+                <div className="h-full w-full flex flex-col text-white p-5 justify-end">
+                  <p className="font-bold">EPPID</p>
+                </div>
+                <Image
+                  alt=""
+                  src={"/images/internal/eppid.webp"}
+                  fill
+                  className="object-center object-cover -z-20 group-hover:scale-105 transition-all duration-300"
+                />
+                <div className=" h-full w-full bg-black/25 group-hover:bg-primary/35 absolute top-0 -z-10 transition-colors duration-300"></div>
+              </Link>
             </Card>
           </div>
         </div>
