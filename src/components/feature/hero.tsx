@@ -98,8 +98,38 @@ type TAppCaoruselItem = {
 const HeroItem = ({ title, image, date, redirect, dataItem }: TAppCaoruselItem) => {
 
   return (
+    // <CarouselItem className="basis-full">
+    //   <div className="w-screen aspect-[9/16] md:aspect-video relative">
+    //     <div className="container h-full w-full text-neutral-100 py-16">
+    //       <div className="flex flex-col h-full w-full z-10 justify-end gap-3">
+    //         {!!date && (
+    //           <Badge className=" bg-yellow-600 hover:bg-yellow-600/80 w-fit rounded-sm">
+    //             {date}
+    //           </Badge>
+    //         )}
+    //         <h1 className="font-bold max-w-5xl">{title}</h1>
+    //         {!!redirect && (
+    //           <Button asChild className="w-fit">
+    //             <Link href={`/berita/${dataItem.newsCategory.slug}/${dataItem.news.id}`}>Selengkapnya</Link>
+    //           </Button>
+    //         )}
+    //       </div>
+    //     </div>
+    //     <Image
+    //       fill
+    //       // src={image}
+    //       src={image ? image : "/images/default.webp"}
+    //       alt="LPSK"
+    //       className=" object-cover object-center -z-20 absolute top-0 !m-0"
+    //     />
+    //     <div className=" h-full w-full absolute top-0 -z-10 bg-neutral-950/25"></div>
+    //   </div>
+    // </CarouselItem>
+
+    
     <CarouselItem className="basis-full">
-      <div className="w-screen aspect-[9/16]  md:aspect-video relative">
+      {/* <div className="w-screen aspect-[9/16] md:aspect-video relative"> */}
+      <div className="w-screen h-[560px] md:aspect-video relative">
         <div className="container h-full w-full text-neutral-100 py-16">
           <div className="flex flex-col h-full w-full z-10 justify-end gap-3">
             {!!date && (

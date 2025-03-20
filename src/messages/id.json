@@ -119,7 +119,10 @@
         }
       ]
     },
-    
+    {
+      "name": "PPID",
+      "path": "https://e-ppid.bpk.go.id/"
+    },
     {
       "name": "Berita",
       "path": "/berita",
